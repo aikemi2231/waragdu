@@ -1,0 +1,185 @@
+//random recommended items
+            Random number = new Random();
+
+            int value = number.Next(1, 4);
+            Console.WriteLine("-----WELCOME TO MOBILE LEGENDS-----");
+            switch (value)
+            {
+                case 1:
+                    Console.WriteLine("-----!!!Recommended ITEMS for you!!!-----");
+                    Console.WriteLine("\n Realme Book | HP Spectre x360 14 | Macbook Pro |" +
+                        "\n Asus Zenbook Pro Duo 14 | Dell XPS 13 | Apple Macbook Air |");
+                    break;
+                case 2:
+                    Console.WriteLine("-----!!!Recommended ITEMS for you!!!-----");
+                    Console.WriteLine("\n Computer desk | Monitor | RAM |" +
+                        "\n Mechanical Keyboard | Mouse | Office Chair |");
+                    break;
+                case 3:
+                    Console.WriteLine("-----!!!Recommended ITEMS for you!!!-----");
+                    Console.WriteLine("Dildo");
+                    break;
+            }
+            // Item
+            
+            Console.Write("\nSearch your items: ");
+            string items = Console.ReadLine().ToLower();
+
+            string voucher = "";
+            double Totalprice = 0;
+            switch (items)
+            {
+                // ITEMS IN CASE
+                case "computer desk":
+                    Console.WriteLine("" +
+                        "\nChoose Variants/Sizes you want: " +
+                        "\n80cm 1400pesos" +
+                        "\n100cm 100pesos" +
+                        "\n120cm" +
+                        "\n140cm");
+
+
+                    //variant of the item will be executed rn
+                    Console.Write("\nVariant of the item:");
+                    string itemVariant = Console.ReadLine().ToLower();
+                    if (itemVariant == "120cm")
+                    {
+                        int shippingFee = 500;
+                        Totalprice = 2000 + shippingFee;
+                        Console.WriteLine("\nTotal Price of your parcel " + Totalprice);
+
+                        Console.WriteLine("\nDo you want to use your voucher?");
+                        voucher = Console.ReadLine();
+
+                    }
+                    else if (itemVariant == "100cm")
+                    {
+                        int shippingFee = 400;
+                        Totalprice = 1700 + shippingFee;
+                        Console.WriteLine("Total Price of your parcel " + Totalprice);
+
+                        Console.WriteLine("\nDo you want to use your voucher?");
+                        voucher = Console.ReadLine();
+                    }
+                    else if (itemVariant == "80cm")
+                    {
+                        int shippingFee = 300;
+                        Totalprice = 1400 + shippingFee;
+                        Console.WriteLine("Total Price of your parcel " + Totalprice);
+
+                        Console.WriteLine("\nDo you want to use your voucher?");
+                        voucher = Console.ReadLine();
+                    }
+                    
+                    //VOUCHER SYSTEMMMMMMMMMMMMMMMM
+                    if (voucher == "yes")
+                    {
+                        Console.Write("\nPlease select voucher you want to use: ");
+                        string voucher132 = Console.ReadLine();
+                        if (voucher132 == "voucher1")
+                        {
+                            int voucher1 = 100;
+
+                            double overall = Totalprice - voucher1;
+                            Console.WriteLine("Total price with voucher: " + overall);
+                            Console.WriteLine("YOUR PARCEL WILL BE DELIVERED IN 5 DAYS!!");
+                        }
+                        else if (voucher132 == "voucher2")
+                        {
+                            int voucher2 = 200;
+
+                            double overall = Totalprice - voucher2;
+                            Console.WriteLine("Total price with voucher: " + overall);
+                        }
+                        else if (voucher132 == "voucher3")
+                        {
+                            int voucher2 = 300;
+
+                            double overall = Totalprice - voucher2;
+                            Console.WriteLine("Toral price with voucher: " + overall);
+                            
+                        }
+                    }
+
+                    break;
+                    //ANOTHER ITEMMMMMMMMMMM
+                case "laptop":
+
+                    Console.WriteLine("" +
+                       "\nChoose Brand and Variant you want: " +
+                       "\nHp laptop - 15,000 pesos" +
+                       "\n100cm 100pesos" +
+                       "\n120cm" +
+                       "\n140cm");
+                        
+                    Console.Write("\nVariant of the item:");
+                    string itemVariant1 = Console.ReadLine().ToLower();
+                    if (itemVariant1 == "Hp Laptop")
+                    {
+                        int shippingFee = 500;
+                        Totalprice = 2000 + shippingFee;
+                        Console.WriteLine("\nTotal Price of your parcel " + Totalprice);
+
+                        Console.WriteLine("\nDo you want to use your voucher?");
+                        voucher = Console.ReadLine();
+
+                    }
+                    else if (itemVariant1 == "100cm")
+                    {
+                        int shippingFee = 400;
+                        Totalprice = 1700 + shippingFee;
+                        Console.WriteLine("Total Price of your parcel " + Totalprice);
+                    }
+                    else if (itemVariant1 == "80cm")
+                    {
+                        int shippingFee = 300;
+                        Totalprice = 1400 + shippingFee;
+                        Console.WriteLine("Total Price of your parcel " + Totalprice);
+                    }
+
+
+                    break;
+                   
+            }
+            //nameeee
+            Console.WriteLine("-----PLEASE ENTER YOUR 'FULL NAME' FOR DELIVERY PURPOSES-----");
+
+            string input = "";
+
+            while (input != "rey michael carulasan" | input != "danes mark pardillo" | input != "gerville caintapan")
+            {
+                input = Console.ReadLine().ToLower();
+                Console.WriteLine("FULL NAME: " + input.ToUpper());
+
+            }
+
+            Console.WriteLine("-----CONTACT NAME CONFIRMED-----");
+
+
+
+            //mobile number
+            Console.WriteLine("\n-----PLEASE ENTER YOUR 'MOBILE NUMBER' FOR DELIVERY PURPOSES-----");
+
+
+            while (input != "01234567891")
+            {
+                input = Console.ReadLine().ToLower();
+                Console.WriteLine("MOBILE NUMBER: " + input.ToUpper());
+
+
+            }
+
+            Console.WriteLine("-----CONTACT NUMBER CONFIRMED-----");
+
+
+
+            //address
+            Console.WriteLine("\n-----PLEASE ENTER YOUR ADRESS FOR DELIVERY PURPOSES-----");
+            while (input != "talisay city cebu")
+            {
+                input = Console.ReadLine().ToLower();
+                Console.WriteLine("Enter your MOBILE NUMBER to confirm your order: " + input.ToUpper());
+
+            }
+
+            Console.WriteLine("-----CONTACT ADDRESS CONFIRMED-----");
