@@ -75,7 +75,7 @@ string CalTotal;
 
         private void btnMulti_Click(object sender, EventArgs e)
         {
-            option = "*";
+            option = "x";
             num1 = int.Parse(txtTotal.Text);
 
             txtTotal.Clear();
@@ -97,7 +97,7 @@ string CalTotal;
                 result = num1 + num2;
             if (option.Equals("-"))
                 result = num1 - num2;
-            if (option.Equals("*"))
+            if (option.Equals("x"))
                 result = num1 * num2;
             if (option.Equals("/"))
                 result = num1 / num2;
