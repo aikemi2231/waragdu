@@ -1,0 +1,57 @@
+using System;
+using System.Windows.Forms;
+
+namespace AverageCalculator
+{
+    public partial class Form1 : Form
+    {
+        private double[] numbers = new double[10];
+        private int count = 0;
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (count == 10)
+            {
+                MessageBox.Show("You have already entered 10 numbers.");
+                return;
+            }
+
+            try
+            {
+                double num = double.Parse(txtNumber.Text);
+                numbers[count++] = num;
+                txtNumber.Clear();
+                txtNumber.Focus();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter a valid number.");
+                txtNumber.Clear();
+                txtNumber.Focus();
+            }
+        }
+
+        private void btnAverage_Click(object sender, EventArgs e)
+        {
+            if (count < 10)
+            {
+                MessageBox.Show("You need to enter 10 numbers.");
+                return;
+            }
+
+            double sum = 0;
+            foreach (double num in numbers)
+            {
+                sum += num;
+            }
+
+            double average = sum / numbers.Length;
+            MessageBox.Show("The average of the numbers is: " + average);
+        }
+    }
+}
