@@ -1,0 +1,27 @@
+//Maoni ang FIELDS SIR
+        public string Student_Clearance;
+        public string Student_Grades;
+        public string Student_Ledger;
+        public string Student_Account;
+        public string Student_Intervention;
+        public string Student_Profile;
+        public string Major_Exam_Scores;
+        public string Student_TuitionBalance;
+        public string Student_Online_Activities;
+        public string Student_Curriculum;
+        public string Student_Schedule;
+        public string Student_RecieptNumber;
+        public string Student_Enrollment;
+        public string Student_Credits;
+        public string Student_Debit;
+        public string Student_Scholarship;
+        public string Student_Manual;
+        public string Enrollment_Course;
+        public string Student_Subjects;     
+        public string Second_Semester;
+
+        //Methods Ni Sir
+        public string displayInfo()
+        {
+            return "28,809.05" + Student_TuitionBalance + "1.00" + Student_Grades + "28809.95 " + Student_Debit + "DSTRU1,COPRO2,OOPROG,ARTAPP,PEDUC2,NSTP02,PURCOM,MATMOD" + Student_Subjects + "CARULASAN, REY MICHAEL LABIAGA" + Student_Account;
+        }
