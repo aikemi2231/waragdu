@@ -1,0 +1,16 @@
+  MaNigga StudentAccount = new MaNigga();
+
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StudentAccount.Student_TuitionBalance = btnClickheretoseeyouraccount.Text;
+            StudentAccount.Student_Grades = btnClickheretoseeyouraccount.Text;
+            StudentAccount.Student_Debit = btnClickheretoseeyouraccount.Text;
+            StudentAccount.Student_Subjects = btnClickheretoseeyouraccount.Text;
+            StudentAccount.Student_Account = btnClickheretoseeyouraccount.Text;
+            this.Hide();    
+        }
