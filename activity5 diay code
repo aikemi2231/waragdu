@@ -1,0 +1,62 @@
+ public partial class Form1 : Form
+    {
+        
+        public Form1()
+        {
+            InitializeComponent();
+            txtAthleticFee.Text = "650";
+        }
+        
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCompute_Click(object sender, EventArgs e)
+        {
+            double NumberOfCredits, BookPayments, AthleticFee, Total;
+            NumberOfCredits = Convert.ToInt32(txtNumberOfCredit.Text);
+            BookPayments = Convert.ToInt32(txtBooksPayment.Text);
+            AthleticFee = Convert.ToInt32(txtAthleticFee.Text);
+
+            Total = (NumberOfCredits / 3) * 450 + BookPayments + AthleticFee;
+
+            txtTotal.Text = "₱" + Total.ToString();
+           
+
+        }
+       
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+            txtAthleticFee.Clear();
+            txtBooksPayment.Clear();
+            txtName.Clear();
+            txtNumberOfCredit.Clear();
+            txtProgram.Clear();
+            txtStudentId.Clear();
+            txtTotal.Clear();
+        }
+
+    }
+}
