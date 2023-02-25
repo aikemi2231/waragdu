@@ -1,0 +1,49 @@
+  internal class clsPersonManigga
+    {
+        //fields ni siya ay
+        public string StudentClearance;
+        public string Grades;
+        public string StudentLedger;
+        public string MyAccount;
+        public string Intervention;
+        public string MyProfile;
+        public string ProgramEnrolled;
+        public string MyBalance;
+        public string OnlineActivities;
+        public string Curriculum;
+        public string Schedule;
+        public string StudentRecieptNumber;
+        public string StudentEnrollment;
+        public string StudentCredits;
+        public string StudentDebit;
+        public string StudentScholarship;
+        public string StudentManual;
+        public string EnrollmentCourse;
+        public string StudentSubjects;
+        public string StudentId;
+
+        //Methods ni sya ay 
+
+        public string displayMyProfile()
+        {
+            return MyProfile = "Full Name: Rey Michael Carulasan   | StudentId: 22-2004344 \n\n BirthDate:March 23, 2004                 | Citizenship:Filipino  \n\n CivilStatus:Married                            | Age:18 \n\n  Religion:RomanCatholic                  | Email:act.rmcarulasan@gmail.com";
+        }
+
+        public string displaySchedule()
+        {
+            return Schedule = "COURSE\t\tTIME\t\t\tDAY\n\nDSTRU1\t\t10:00am-11:00am\t\tMT\n\nCOPRO2\t\t11:00am-1:00pm\t\tMT\n\nOOPROG\t7:00am-9:00am\t\tMT\n\nARTAPP\t\t7:00am-8:00am\t\tWTH\n\nPEDUC2\t\t1:00pm-3:00pm\t\tM\n\nNSTP02\t\t11:00am-1:00pm\t\tSat\n\nPURCOM\t\t9:00am-10:00am\t\tWTH\n\nMATMOD\t8:00am-9:00am\t\tWTH";
+        }
+        public string displayMyBalance()
+        {
+            return MyBalance = " ===========>>>RUNNING BALANCE<<<========== \n\n\n\t\t---------->₱22,275.05<----------";
+        }
+        public string displayProgramEnrolled()
+        {
+            return ProgramEnrolled = ">>>Bachelor of Science in Information Technology<<<";
+        }
+        public string displayMyGrades()
+        {
+            return Grades = "SUBJECTS\t\tPRELIM\t\tMIDTERM\t\tFINAL\n\nDSTRU\t\t1.20\t\t1.00\t\t3";
+        }
+    }
+}
