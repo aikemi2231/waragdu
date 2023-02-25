@@ -1,0 +1,64 @@
+public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProgram_Click(object sender, EventArgs e)
+        {
+            clsStudentDetails clsStudent = new clsStudentDetails();
+            clsStudent.StudentProgramDegree = btnProgram.Text;
+
+            MessageBox.Show(clsStudent.displayStudentProgramDegree().ToString());
+
+        }
+
+        private void btnCourses_Click(object sender, EventArgs e)
+        {
+            clsStudentDetails clsStudent = new clsStudentDetails();
+            clsStudent.StudentCourse = btnCourses.Text; 
+
+            MessageBox.Show(clsStudent.displayStudentCourses().ToString());
+        }
+
+        private void btnSchedule_Click(object sender, EventArgs e)
+        {
+            clsStudentDetails clsStudent = new clsStudentDetails();
+            clsStudent.StudentSchedule = btnSchedule.Text;
+
+            MessageBox.Show(clsStudent.displayStudentSchedule().ToString());
+        }
+
+        private void btnID_Click(object sender, EventArgs e)
+        {
+            clsStudentDetails clsStudent = new clsStudentDetails();
+            clsStudent.StudentID = btnID.Text;
+
+            MessageBox.Show(clsStudent.displayStudentID().ToString());
+        }
+
+        private void btnYearSemLvl_Click(object sender, EventArgs e)
+        {
+            clsStudentDetails clsStudent = new clsStudentDetails();
+            clsStudent.StudentYearSemLvl = btnYearSemLvl.Text;
+
+            MessageBox.Show(clsStudent.displayStudentYearSemlvl().ToString());
+        }
+
+        private void btnNextForm_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
