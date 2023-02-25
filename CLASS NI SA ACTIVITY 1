@@ -1,0 +1,47 @@
+internal class clsStudentDetails
+    {
+        public string StudentProgramDegree;
+        public string StudentCourse;
+        public string StudentSchedule;
+        public string StudentID; 
+        public string StudentName;
+        public string StudentStatus;
+        public string StudentYearSemLvl;
+        public string StudentIntervention;
+        public string StudentPrelimGrade;
+        public string StudentMidtermGrade;
+        public string StudentFinalGrade;
+        public string StudentPaymentReceipt;
+        public string AccounNumber;
+        public string AccounName;
+        public string StudentBalance;
+        public string StudentPortalProfile;
+        public string StudentManual;
+        public string StudentGrades;
+        public string StudentSubjects;
+
+        public string displayStudentProgramDegree()
+        {
+            return StudentProgramDegree = "     ===========<<< PROGRAM ENROLLED >>>========== \n\n              >>>Bachelor of Science in Information Technology<<<"; 
+        }
+
+        public string displayStudentCourses()
+        {
+            return StudentCourse = "                    <<<COURSES APPLIED>>>\n\n1. Object Orriented Programming 1 (OOPROG1). \n\n2. Computer Programming 2 (COPRO2). \n\n3. Mathematics in the Modern World (MATMOD). \n\n4. Discrete Structures 1 (DSTRU1). \n\n5. Purposive Communication (PURCOM). \n\n6. Art Appreciation (ARTAPP). \n\n7. National Service Training Program 2 (NSTP2). \n\n8. Physical Education 2 (PEDUC2)";
+        }
+        
+        public string displayStudentSchedule()
+        {
+            return StudentSchedule = "             <<< COURSE SCHEDULE >>>\n\n           1. OOPROG1 (7:00AM - 8:00AM) \n           2. COPRO1 (8:00AM - 9:00AM) \n           3. DSTRU1 (9:00AM - 10:00AM) \n           4. MATMOD (10:00AM - 11:00AM) \n           5. PURCOM (11:00AM - 12:00) \n\n        >>> LUNCH 12:00PM - 1:00PM <<< \n\n           6. ARTAPP (1:00PM - 2:00PM) \n           7. NSTP1 (2:00PM - 3:00PM) \n           8. PEDUC1 (4:00PM - 5:00PM) \n\n              >>> School Dismissed <<<";
+        }
+        public string displayStudentID()
+        {
+            return StudentID = "     >>> ID No: 22-2002643 <<<";
+        }
+        public string displayStudentYearSemlvl()
+        {
+            return StudentYearSemLvl = "      >>> 1st Year and 1st Semester <<<";
+        }
+    }
+    
+}
