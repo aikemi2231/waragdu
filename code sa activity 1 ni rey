@@ -1,0 +1,43 @@
+ private void button1_Click(object sender, EventArgs e)
+        {
+            clsPersonManigga clsPersonManigga = new clsPersonManigga();
+            clsPersonManigga.MyProfile = btnProfile.Text;
+
+            MessageBox.Show(clsPersonManigga.displayMyProfile().ToString());
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            clsPersonManigga clsPersonManigga = new clsPersonManigga();
+            clsPersonManigga.Schedule = btnSchedule.Text;
+
+            MessageBox.Show(clsPersonManigga.displaySchedule().ToString());
+        }
+
+        private void btnBalance_Click(object sender, EventArgs e)
+        {
+            clsPersonManigga clsPersonManigga = new clsPersonManigga();
+            clsPersonManigga.MyBalance = btnBalance.Text;
+
+            MessageBox.Show(clsPersonManigga.displayMyBalance().ToString());
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            clsPersonManigga clsPersonManigga = new clsPersonManigga();
+            clsPersonManigga.ProgramEnrolled = btnProgramEnrolled.Text;
+
+            MessageBox.Show(clsPersonManigga.displayProgramEnrolled().ToString());
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
