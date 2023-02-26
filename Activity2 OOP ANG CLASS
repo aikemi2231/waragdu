@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ACTIVITY2_NI_REY_GWAPO
+{
+    internal class clsAverage
+    {
+        public double COPRO1;
+        public double COPRO2;
+        public double OOPROG;
+        public double COMPOP;
+        public double DSTRU1;
+        public double INTCOM;
+        public double MATMOD;
+        public double PEDUC;
+        public double NSTP02;
+        public double PURCOM;
+        public double Total;
+
+        public double calculate()
+        {
+            Total = COPRO1 + COPRO2 + OOPROG + COMPOP + DSTRU1 + INTCOM + MATMOD + PEDUC + NSTP02 + PURCOM;
+            return Total / 10;
+
+        }
+             
+    }
+}
