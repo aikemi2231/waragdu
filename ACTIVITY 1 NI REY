@@ -1,4 +1,4 @@
-  internal class clsPersonManigga
+internal class clsPersonManigga
     {
         //fields ni siya ay
         public string StudentClearance;
@@ -20,7 +20,7 @@
         public string StudentManual;
         public string EnrollmentCourse;
         public string StudentSubjects;
-        public string StudentId;
+        public string MajorExamScores;
 
         //Methods ni sya ay 
 
@@ -43,7 +43,11 @@
         }
         public string displayMyGrades()
         {
-            return Grades = "SUBJECTS\t\tPRELIM\t\tMIDTERM\t\tFINAL\n\nDSTRU\t\t1.20\t\t1.00\t\t3";
+            return Grades = "SUBJECTS\tPRELIM\t\tMIDTERM\tFINAL\n\nDSTRU\t\t1.20\t\t1.00\t\t3\n\nCOPRO2\t\t3.00\t\t2.13\t\t2.42\n\nOOPROG\t1.20\t\t2.12\t\t1.30\n\nARTAPP\t\t1.00\t\t1.42\t\t1.20\n\nPEDUC2\t\t1.24\t\t1.00\t\t1.00\n\nNSTP02\t\t1.00\t\t1.00\t\t1.23\n\nPURCOM\t\t1.23\t\t2.31\t\t1.65\n\nMATMOD\t2.34\t\t1.87\t\t1.00";
+        }
+        public string displayMajorExamScores()
+        {
+            return MajorExamScores = "COURSE CODE\tPRELIM\t\tMIDTERM\tFINAL\t\t\n\nDSTRU1\t\t50/50\t\t34/50\t\t50/60\n\nCOPRO2\t\t20/50\t\t50/80\t\t50/50\n\nOOPROG\t34/60\t\t50/60\t\t60/90\n\nARTAPP\t\t60/60\t\t50/60\t\t80/100\n\nNSTP02\t\t60/70\t\t40/50\t\t33/40\n\nPURCOM\t\t40/40\t\t25/35\t\t50/50\n\nMATMOD\t40/40\t\t20/30\t\t50/50";
         }
     }
 }
