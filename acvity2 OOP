@@ -1,0 +1,79 @@
+using Microsoft.Win32.SafeHandles;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ACTIVITY2_NI_REY_GWAPO
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            clsAverage avg = new clsAverage();
+
+            avg.COPRO1 = Convert.ToDouble(txtCopro1.Text);
+            avg.COPRO2 = Convert.ToDouble(txtCopro2.Text);
+            avg.OOPROG = Convert.ToDouble(txtOoprog.Text);
+            avg.COMPOP = Convert.ToDouble(txtCompop.Text);
+            avg.DSTRU1 = Convert.ToDouble(txtDstru1.Text);
+            avg.INTCOM = Convert.ToDouble(txtIntcom.Text);
+            avg.MATMOD = Convert.ToDouble(txtMatmod.Text);
+            avg.PEDUC = Convert.ToDouble(txtPeduc.Text);
+            avg.NSTP02 = Convert.ToDouble(txtNstp02.Text);
+            avg.PURCOM = Convert.ToDouble(txtPurcom.Text);
+
+            txtTotal.Text = avg.calculate().ToString();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtTotal.Clear();
+            txtCopro1.Clear();
+            txtCopro2.Clear();
+            txtOoprog.Clear();
+            txtCompop.Clear();
+            txtDstru1.Clear();
+            txtIntcom.Clear();
+            txtMatmod.Clear();
+            txtPeduc.Clear();
+            txtNstp02.Clear();
+            txtPurcom.Clear();
+        }
+
+        private void txtTotal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
