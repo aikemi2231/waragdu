@@ -1,0 +1,75 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Carulasan_Activity6_Properties
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnCompute_Click(object sender, EventArgs e)
+        {
+            double quiz1, quiz2, quiz3, quiz4, Activity2, Activity1, final1, totalGrade, prelimPercent, midtermPercent, finalPercent;
+
+            quiz1 = Convert.ToDouble(txtQuiz1.Text);
+            quiz2 = Convert.ToDouble(txtQuiz2.Text);
+            quiz3 = Convert.ToDouble(txtQuiz3.Text);
+            quiz4 = Convert.ToDouble(txtQuiz4.Text);
+
+            prelimPercent = ((quiz1 + quiz2 + quiz3 + quiz4) / 4) * .30;
+
+            txtQuizPercentage.Text = prelimPercent.ToString("F2");
+
+            Activity1 = Convert.ToDouble(txtActivity1.Text);
+            Activity2 = Convert.ToDouble(txtActivity2.Text);
+
+            midtermPercent = ((Activity1 + Activity2) / 2) * .40;
+
+            txtmidtermPercent.Text = midtermPercent.ToString("F2");
+
+            final1 = Convert.ToDouble(txtFinalExam.Text);
+
+            finalPercent = final1 * .30;
+
+            txtFinalPercentage.Text = finalPercent.ToString("F2");
+
+            totalGrade = prelimPercent + midtermPercent + finalPercent;
+
+            txtTotal.Text = totalGrade.ToString("F2");
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtQuiz1.Clear();
+            txtQuiz2.Clear();
+            txtQuiz3.Clear();
+            txtQuiz4.Clear();
+            txtActivity1.Clear();
+            txtActivity2.Clear();
+            txtFinalExam.Clear();
+            txtQuizPercentage.Clear();
+         
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+        
+        }
+    }
+}
