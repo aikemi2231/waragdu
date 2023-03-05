@@ -1,12 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Carulasan_Activity6_Properties
 {
@@ -17,35 +8,57 @@ namespace Carulasan_Activity6_Properties
             InitializeComponent();
         }
 
+        private void btnCompute_Click(object sender, EventArgs e)
+        {
+            double Q1, Q2, Q3, Q4, MD1, MD2, final, totalGrade, QuizPercent, MidtermPercent, FinalPercent, QuizAverage, MidtermAverage;
+            Q1 = Convert.ToDouble(txtQuiz1.Text);
+            Q2 = Convert.ToDouble(txtQuiz2.Text);
+            Q3 = Convert.ToDouble(txtQuiz3.Text);
+            Q4 = Convert.ToDouble(txtQuiz4.Text);
+            QuizAverage = (Q1 + Q2 + Q3 + Q4) / 4;
+            QuizPercent = QuizAverage * .30;
+
+            txtQuizAverage.Text = QuizAverage.ToString();
+            txtQuizPercentage.Text = QuizPercent.ToString("F2");
+
+            MD1 = Convert.ToDouble(txtActivity1.Text);
+            MD2 = Convert.ToDouble(txtActivity2.Text);
+
+            MidtermAverage = (MD1 + MD2) / 2;
+            MidtermPercent = MidtermAverage * .40;
+
+            txtMidtermAverage.Text = MidtermAverage.ToString();
+            txtMidtermPercentage.Text = MidtermPercent.ToString("F2");
+
+            final = Convert.ToDouble(txtFinalExam.Text);
+
+            FinalPercent = final * .30;
+
+            txtFinalPercentage.Text = FinalPercent.ToString("F2");
+
+            totalGrade = QuizPercent + MidtermPercent + FinalPercent;
+
+            txtFinalAverage.Text = totalGrade.ToString("F2");
+        }
+
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtActivity1.Clear();
-            txtActivity2.Clear();
-            txtFinalExam.Clear();
             txtQuiz1.Clear();
             txtQuiz2.Clear();
             txtQuiz3.Clear();
             txtQuiz4.Clear();
-            txtTotal.Clear();
+            txtActivity1.Clear();
+            txtActivity2.Clear();
+            txtFinalExam.Clear();
+            txtFinalAverage.Clear();
+            txtQuizAverage.Clear();
+            txtMidtermAverage.Clear();
+            txtFinalPercentage.Clear();
+            txtMidtermPercentage.Clear();
+            txtQuizPercentage.Clear();
+
         }
-
-        private void btnCompute_Click(object sender, EventArgs e)
-        {
-
-            double Quiz1, Quiz2, Quiz3, Quiz4, Activity1, Activity2, FinalExam, result;
-
-            Quiz1 = Convert.ToDouble(txtQuiz1.Text);
-            Quiz2 = Convert.ToDouble(txtQuiz2.Text);
-            Quiz3 = Convert.ToDouble(txtQuiz3.Text);
-            Quiz4 = Convert.ToDouble(txtQuiz4.Text);
-            Activity1 = Convert.ToDouble(txtActivity1.Text);
-            Activity2 = Convert.ToDouble(txtActivity2.Text);
-            FinalExam = Convert.ToDouble(txtFinalExam.Text);
-
-            result = (Quiz1 + Quiz2 + Quiz3 + Quiz4) / 4 + (Activity1 + Activity2) / 2 + (FinalExam) / 7;
-
-            txtTotal.Text = result.ToString();
-            
-        }
+ 
     }
+  }
 }
