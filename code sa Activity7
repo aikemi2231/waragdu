@@ -1,1 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
+namespace TelephoneCall
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnCompute_Click(object sender, EventArgs e)
+        {
+            int AreaCode, NumOfMin, Charge;
+
+            AreaCode = int.Parse(txtAreaCode.Text);
+            NumOfMin = int.Parse(txtNumOfMin.Text);
+
+            if ((AreaCode != 032) && (NumOfMin > 20))
+            {
+                Charge = 3 * NumOfMin;
+            }
+            else
+            {
+                Charge = 2 * NumOfMin;
+            }
+
+           
+            lblDisplay.Text = String.Format("The total charge is {0:C}", Charge);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtName.Clear();
+            txtAreaCode.Clear();
+            txtContactNum.Clear();
+            txtNumOfMin.Clear();
+            lblDisplay.Text = "";
+        }
+    }
+}
