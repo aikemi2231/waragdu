@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Carulasan_Activity1_Midterm
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button3.Visible = true;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            button3.Visible = true;
+            button1.Visible = true;
+            button2.Visible = true;
+            button4.Visible = true;
+            button5.Visible = true;
+            listBox1.Visible = true;
+            button6.Visible = false;
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+
+
+        }
+    }
+}
