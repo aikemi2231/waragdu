@@ -1,0 +1,103 @@
+public class Game
+{
+    private PictureBox AngryBirdie;
+    private PictureBox pipebottom;
+    private PictureBox pipebottom2;
+    private PictureBox pipetop;
+    private PictureBox pipetop2;
+    private Label lblGo;
+    private Label lblscoreText;
+    private int gravity;
+    private int pipeSpeed;
+    private int score;
+    private Random rnd;
+    private PictureBox Ground;
+
+    public Game(PictureBox angryBirdie, PictureBox pipeBottom, PictureBox pipeBottom2, PictureBox pipeTop, PictureBox pipeTop2, Label goLabel, Label scoreLabel, PictureBox ground)
+    {
+        AngryBirdie = angryBirdie;
+        pipebottom = pipeBottom;
+        pipebottom2 = pipeBottom2;
+        pipetop = pipeTop;
+        pipetop2 = pipeTop2;
+        lblGo = goLabel;
+        lblscoreText = scoreLabel;
+        gravity = 1;
+        pipeSpeed = 5;
+        score = 0;
+        rnd = new Random();
+        Ground = ground;
+    }
+
+    public void Update()
+    {
+        AngryBirdie.Top += gravity;
+        pipebottom.Left -= pipeSpeed;
+        pipebottom2.Left -= pipeSpeed;
+        pipetop.Left -= pipeSpeed;
+        pipetop2.Left -= pipeSpeed;
+        lblGo.Visible = false;
+
+        lblscoreText.Text = "Score:" + score;
+
+        if (pipebottom.Left < -250)
+        {
+            pipebottom.Left = rnd.Next(600, 800);
+            score++;
+        }
+        if (pipebottom2.Left < -180)
+        {
+            pipebottom2.Left = rnd.Next(950, 1150);
+            score++;
+        }
+
+        if (pipetop.Left < -286)
+        {
+            pipetop.Left = rnd.Next(1150, 1350);
+            score++;
+        }
+        if (pipetop2.Left < -410)
+        {
+            pipetop2.Left = rnd.Next(1400, 1600);
+        }
+
+        if (AngryBirdie.Bounds.IntersectsWith(pipebottom.Bounds) ||
+            AngryBirdie.Bounds.IntersectsWith(pipebottom2.Bounds) ||
+            AngryBirdie.Bounds.IntersectsWith(pipetop.Bounds) ||
+            AngryBirdie.Bounds.IntersectsWith(pipetop2.Bounds) ||
+            AngryBirdie.Bounds.IntersectsWith(Ground.Bounds) || AngryBirdie.Top < -25)
+        {
+            EndGame();
+        }
+        if (score > 1)
+        {
+            pipeSpeed = 10;
+        }
+        if (score > 2)
+        {
+            pipeSpeed = 15;
+        }
+        if (score > 3)
+        {
+            pipeSpeed = 20;
+        }
+        if (score > 4)
+        {
+            pipeSpeed = 20;
+        }
+        if (score > 10)
+        {
+            GameComplete();
+        }
+    }
+
+    private void EndGame()
+    {
+        // Add your end game logic here
+    }
+
+    private void GameComplete()
+    {
+        // Add your game complete logic here
+    }
+}
