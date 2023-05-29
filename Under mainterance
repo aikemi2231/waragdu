@@ -1,0 +1,132 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace FinalProject
+{
+    public partial class StartGame : Form
+    {
+        private FlappyBirdGame flappyBirdGame;
+
+        public StartGame()
+        {
+            InitializeComponent();
+            InitializeGame();
+        }
+
+        private void InitializeGame()
+        {
+            flappyBirdGame = new FlappyBirdGame();
+
+            // Set initial game state
+            gameOver = false;
+            levelComplete = false;
+
+            // Set bird initial position
+            AngryBirdie.Location = new Point(54, 77);
+
+            // Set pipes initial positions
+            pipetop.Left = 500;
+            pipetop2.Left = 900;
+            pipebottom.Left = 600;
+            pipebottom2.Left = 1200;
+
+            // Reset score and pipe speed
+            score = 0;
+            pipeSpeed = 8;
+            lblGo.Text = "Score: 0";
+            lblGo.Visible = false;
+
+            // Start the game timer
+            GameTimer.Start();
+        }
+
+        private void GameTimer_Tick(object sender, EventArgs e)
+        {
+            flappyBirdGame.Update(pipebottom, pipebottom2, pipetop, pipetop2, AngryBirdie, Ground, ref score, ref gameOver, ref levelComplete, ref pipeSpeed);
+
+            lblGo.Visible = gameOver || levelComplete;
+            lblGo.Text = gameOver ? " GAME OVER!! Press R to Restart" : "Level Complete Press 'G' to Play Another Game";
+
+            if (levelComplete)
+            {
+                GameTimer.Stop();
+                var ChooseGame = new ChooseGame();
+                ChooseGame.Show();
+                this.Hide();
+            }
+        }
+
+        private void RestartGame()
+        {
+            InitializeGame();
+        }
+
+        private void AngryBirdie_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Space)
+            {
+                flappyBirdGame.FlappyBirdJump(-10);
+            }
+            if (e.KeyCode == Keys.G && levelComplete)
+            {
+                var ChooseGame = new ChooseGame();
+                ChooseGame.Show();
+                this.Hide();
+            }
+        }
+
+        private void AngryBirdie_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Space)
+            {
+                flappyBirdGame.FlappyBirdJump(10);
+            }
+            if (e.KeyCode == Keys.R && gameOver)
+            {
+                RestartGame();
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            new ChooseGame().Show();
+            this.Close();
+        }
+    }
+
+    class FlappyBirdGame
+    {
+        private int pipeSpeed;
+        private int gravity;
+        private int score;
+        private bool gameOver;
+        private bool levelComplete;
+        private Random rnd;
+
+        public FlappyBirdGame()
+        {
+            pipeSpeed = 9;
+            gravity = 8;
+            score = 0;
+            gameOver = false;
+            levelComplete = false;
+            rnd = new Random();
+        }
+
+        public void Update(PictureBox pipebottom, PictureBox pipebottom2, PictureBox pipetop, PictureBox pipetop2, PictureBox bird, PictureBox ground, ref int score, ref bool gameOver, ref bool levelComplete, ref int pipeSpeed)
+        {
+            bird.Top += gravity;
+            pipebottom.Left -= pipeSpeed;
+            pipebottom2.Left -= pipeSpeed;
+            pipetop.Left -= pipeSpeed;
+            pipetop2.Left -= pipeSpeed;
+
+            score = this.score;
+
+            if (pipebottom.Left < -250)
+            {
+                pipebottom.Left = rnd.Next(600, 800);
+                score++;
+            }
+            if (pipebottom
