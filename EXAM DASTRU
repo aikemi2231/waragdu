@@ -1,0 +1,93 @@
+using System.Diagnostics;
+
+namespace CarulasanCutie
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("Number 1 Ni");
+            LinkedList<string> month = new LinkedList<string>();
+
+            month.AddFirst("June");
+            month.AddLast("Nov");
+            month.AddFirst("Feb");
+
+            Console.WriteLine("\n initial Months in the Calendar:");
+            foreach (string m in month)
+            {
+                Console.Write(m + "");
+            }
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("\n ");
+            Console.Write("Number 2 Ni");
+
+
+            month.AddBefore(month.First, "Jan");
+            month.AddAfter(month.Last, "Dec");
+            Console.WriteLine("\n ----");
+            Console.WriteLine("\n More months in the Calendar:");
+            foreach (string m in month)
+            {
+                Console.Write(m + "");
+            }
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\n");
+            Console.Write("Number 3");
+
+            LinkedListNode<string> loveMonth = month.First.Next;
+            LinkedListNode<string> soulMonth = month.Last.Previous;
+            month.AddAfter(loveMonth, "Mar");
+            month.AddBefore(soulMonth, "Oct");
+            month.RemoveFirst();
+            month.RemoveLast();
+            Console.Write("\n ----");
+            Console.WriteLine("\n Changes in the Calendar:");
+            foreach (string m in month)
+            {
+                Console.Write(m + "");
+            }
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n");
+            Console.Write("Number 4");
+            LinkedListNode<string> firstQtrMonth = loveMonth.Next;
+            LinkedListNode<string> lastQtrMonth = soulMonth.Previous;
+            month.AddAfter(firstQtrMonth, "Apr");
+            month.AddAfter(firstQtrMonth.Next, "May");
+            month.AddBefore(lastQtrMonth, "Sep");
+            month.AddBefore(lastQtrMonth.Previous, "Aug");
+            month.Remove(loveMonth);
+            month.Remove(soulMonth);
+            Console.Write("\n-----");
+            Console.WriteLine("\n More Changes in the Calendar:");
+            foreach (string m in month)
+            {
+                Console.Write(m + "");
+            }
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("\n");
+            Console.Write("Number 5");
+
+            month.RemoveFirst();
+            month.RemoveLast();
+            month.RemoveFirst();
+            month.RemoveLast();
+            month.Remove(month.First.Next);
+            month.RemoveFirst();
+            month.AddFirst("Jul");
+            month.AddFirst("Sep");
+            Console.WriteLine("\n-----");
+            Console.WriteLine("\n Quarter Months in the Calendar:");
+            foreach (string m in month)
+            {
+                Console.Write(m + "");
+            }
+
+            Console.ReadLine();
+
+
+        }
+    }
+}
