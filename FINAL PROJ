@@ -1,0 +1,104 @@
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            double balance = 10000.00;
+
+           
+            string yesOrno;
+            do
+            {
+                while (true)
+
+                {
+                    Console.WriteLine("" +
+                              "                                |ATM MENU|                          " +
+                             "\n     ______________________________________________________________" +
+                             "\n    |                     Please Choice Wisely                     |" +
+                             "\n    |______________________________________________________________|" +
+                             "\n    |   Press '1' To check Balance  | Press '3' To Withdraw        |" +
+                             "\n    |                               |                              |" +
+                             "\n    |   Press '2' To Deposit        | Press '4' To Exit            |" +
+                             "\n    |                               |                              |" +
+                             "\n    |______________________________________________________________|");
+
+                    
+                    Console.Write("Choose Between (1-4): ");
+                    int choice = Convert.ToInt32(Console.ReadLine());
+
+                    
+                    if (choice == 1)
+                    {
+
+                        // Check Balance
+                        Console.WriteLine($"Your current balance: ${balance}");
+                        Console.Write("\n----------------------------------------------------------------------");
+                        Console.WriteLine("\n \n           -----Would You Like To Go Back Home page?-----");
+                        Console.WriteLine("               Type 'YES' to proceed to the home page");
+                        Console.WriteLine("              Typing 'NO' will automatically exit the app.");
+                        Console.Write("\n----------------------------------------------------------------------\n");
+                        Console.Write("    Type your answer:");
+                        yesOrno = Console.ReadLine().ToLower();
+                        Console.Clear();
+
+
+                    }
+                    else if (choice == 2)
+                    {
+                        // Deposit
+                        Console.Write("Enter deposit amount: $");
+                        double depositAmount = Convert.ToDouble(Console.ReadLine());
+                        balance += depositAmount;
+                        Console.WriteLine($"Deposit of ${depositAmount} successful. New balance: ${balance}");
+                    }
+                    else if (choice == 3)
+                    {
+                        // Withdraw
+                        Console.Write("Enter withdrawal amount: $");
+                        double withdrawalAmount = Convert.ToDouble(Console.ReadLine());
+
+                        if (withdrawalAmount > balance)
+                        {
+                            Console.WriteLine("Insufficient funds. Withdrawal failed.");
+                        }
+                        else
+                        {
+                            balance -= withdrawalAmount;
+                            Console.WriteLine($"Withdrawal of ${withdrawalAmount} successful. New balance: ${balance}");
+                        }
+                    }
+                    else if (choice == 4)
+                    {
+                        // Exit the program
+                        Console.WriteLine("Thank you for using the ATM. Goodbye!");
+                        break;
+                    }
+                    else
+                    {
+                        // Invalid choice
+                        Console.WriteLine("Invalid choice. Please enter a number between 1 and 4.");
+                    }
+                    Console.ReadLine();
+
+
+                }
+                yesOrno = Console.ReadLine().ToLower();
+            }               
+            while (yesOrno == "yes") ;
+            Console.WriteLine("" +
+                           "     ______________________________________________________________ " +
+                           "\n    |                                                              |" +
+                           "\n    |                                                              |" +
+                           "\n    |                                                              |" +
+                           "\n    |                  THANK YOU FOR USING OUR APP                 |" +
+                           "\n    |                             O_O                              |" +
+                           "\n    |                                                              |" +
+                           "\n    |                                                              |" +
+                           "\n    |______________________________________________________________|");
+            Console.ReadKey();
+        }
+    }
+}
