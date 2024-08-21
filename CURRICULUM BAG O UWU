@@ -497,7 +497,7 @@
             </tr>
             <!-- SYEMPRE FOURTH NI DIRI-->
             <tr class="table title">
-                <td colspan="7">Fourth Year, Second Semester</td>
+                <td colspan="7">Fourth Year, First Semester</td>
             </tr>
             <tr class="table head">
                 <td>Course</td>
@@ -508,12 +508,12 @@
                 <td>Course</td>
                 <td>Term</td>
             </tr>
-            <tr class="tr-White" class="table body">
-                <td>CPSTON1</td>
-                <td>Capstone Project 1</td>
+            <tr class="tr-Blue" class="table body">
+                <td>CONWOR</td>
+                <td>The Contemporary World	</td>
                 <td>3.0</td>
                 <td></td>
-                <td>In progress</td>
+                <td>Passed</td>
                 <td></td>
                 <td> <br> </td>
             </tr>
@@ -524,7 +524,7 @@
                 <td></td>
                 <td>In progress </td>
                 <td> </td>
-                <td><br></td>
+                <td><br></td>   
             </tr>
             <tr class="tr-White" class="table body">
                 <td>PROEL4</td>
