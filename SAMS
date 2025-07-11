@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<title>Student Curriculum</title>
+<style>
+    table,
+    tr,
+    th,
+    td {
+        border-width: 1px;
+        border-color: rgb(151, 151, 151);
+        border-style: solid;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    table {
+        width: 900px;
+        margin: auto;
+    }
+
+    .tr-Blue {
+        height: 40px;
+        font-size: 11px;
+        background-color: skyblue;
+        color: rgb(85, 85, 85);
+    }
+
+    .tr-white {
+        height: 40px;
+        font-size: 11px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(85, 85, 85);
+    }
+
+    .yearsem {
+        height: 30px;
+        font-size: 12px;
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .headers {
+        height: 25px;
+        font-size: 11px;
+        font-weight: bold;
+        background-color: #e2e2e2;
+        color: rgb(43, 43, 43);
+    }
+
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(224, 224, 224);
+    }
+
+    h6 {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: left;
+        color: rgb(0, 25, 138);
+        font-size: 20px;
+        margin: 10px 0;
+    }
+</style>
+</head>
+
+<body>
+    <h4>Curriculum</h4>
+    <div>
+        <br>
+        <h6>Bachelor of Science in Information Technology <br>
+            CARULASAN, REY MICHAEL L. <br>
+            22-2004344</h6>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="7" class="yearsem">First Year, First Semester</th>
+                    </tr>
+                    <tr class="headers">
+                        <th style="width: 12%;">Course</th>
+                        <th style="width: 27%;">Description</th>
+                        <th style="width: 8%;">Unit</th>
+                        <th style="width: 10%;">Grade</th>
+                        <th style="width: 13%;">Remarks</th>
+                        <th style="width: 13%;">Course</th>
+                        <th style="width: 13%;">Term</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr-Blue">
+                        <td>NSTP01</td>
+                        <td>Civic Welfare Training Service 1</td>
+                        <td>3.0</td>
+                        <td>1.60</td>
+                        <td>Passed</td>
+                        <td>NSTP01</td>
+                        <td>First Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>SCITEC</td>
+                        <td>Science, Technology and Society</td>
+                        <td>3.0</td>
+                        <td>1.90</td>
+                        <td>Passed</td>
+                        <td>SCITEC</td>
+                        <td>First Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>INTCOM</td>
+                        <td>Introduction to Computing</td>
+                        <td>3.0</td>
+                        <td>2.20</td>
+                        <td>Passed</td>
+                        <td>INTCOM</td>
+                        <td>First Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>COPRO1</td>
+                        <td>Computer Programming 1</td>
+                        <td>3.0</td>
+                        <td>2.00</td>
+                        <td>Passed</td>
+                        <td>COPRO1</td>
+                        <td>First Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>COMPOP</td>
+                        <td>Computer Operations: Office Productivity Software(MS Office)</td>
+                        <td>3.0</td>
+                        <td>1.40</td>
+                        <td>Passed</td>
+                        <td>COMPOP</td>
+                        <td>First Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>PEDUC1</td>
+                        <td>Physical Activities Towards Health and Fitness 1</td>
+                        <td>2.0</td>
+                        <td>1.70</td>
+                        <td>Passed</td>
+                        <td>PEDUC1</td>
+                        <td>First Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>JRIZAL</td>
+                        <td>Life, Works and Writings of Jose Rizal</td>
+                        <td>3.0</td>
+                        <td>1.70</td>
+                        <td>Passed</td>
+                        <td>JRIZAL</td>
+                        <td>First Semester A.Y 2022-2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="7" class="yearsem">First Year, Second Semester</th>
+                    </tr>
+                    <tr class="headers">
+                        <th style="width: 12%;">Course</th>
+                        <th style="width: 27%;">Description</th>
+                        <th style="width: 8%;">Unit</th>
+                        <th style="width: 10%;">Grade</th>
+                        <th style="width: 13%;">Remarks</th>
+                        <th style="width: 13%;">Course</th>
+                        <th style="width: 13%;">Term</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr-Blue">
+                        <td>OOPROG</td>
+                        <td>Object-Oriented Programming</td>
+                        <td>3.0</td>
+                        <td>2.90</td>
+                        <td>Passed</td>
+                        <td>OOPROG</td>
+                        <td>Second Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>ARTAPP</td>
+                        <td>Art Appreciation</td>
+                        <td>3.0</td>
+                        <td>2.30</td>
+                        <td>Passed</td>
+                        <td>ARTAPP</td>
+                        <td>Second Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>PURCOM</td>
+                        <td>Purposive Communication</td>
+                        <td>3.0</td>
+                        <td>2.10</td>
+                        <td>Passed</td>
+                        <td>PURCOM</td>
+                        <td>Second Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>NSTP02</td>
+                        <td>Civic Welfare Training Service 2</td>
+                        <td>3.0</td>
+                        <td>1.00</td>
+                        <td>Passed</td>
+                        <td>NSTP02</td>
+                        <td>Second Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>DSTRU1</td>
+                        <td>Discrete Structures 1</td>
+                        <td>3.0</td>
+                        <td>2.30</td>
+                        <td>Passed</td>
+                        <td>DSTRU1</td>
+                        <td>Second Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>PEDUC2</td>
+                        <td>Physical Activities Towards Health and Fitness 2</td>
+                        <td>2.0</td>
+                        <td>1.50</td>
+                        <td>Passed</td>
+                        <td>PEDUC2</td>
+                        <td>Second Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>COPRO2</td>
+                        <td>Computer Programming 2</td>
+                        <td>3.0</td>
+                        <td>2.90</td>
+                        <td>Passed</td>
+                        <td>COPRO2</td>
+                        <td>Second Semester A.Y 2022-2023</td>
+                    </tr>
+                    <tr class="tr-Blue">
+                        <td>GEEL01</td>
+                        <td>General Education Elective 1</td>
+                        <td>3.0</td>
+                        <td>1.90</td>
+                        <td>Passed</td>
+                        <td>GEEL01</td>
+                        <td>Second Semester A.Y 2022-2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7" class="yearsem">Second Year, First Semester</th>
+                </tr>
+                <tr class="headers">
+                    <th style="width: 12%;">Course</th>
+                    <th style="width: 27%;">Description</th>
+                    <th style="width: 8%;">Unit</th>
+                    <th style="width: 10%;">Grade</th>
+                    <th style="width: 13%;">Remarks</th>
+                    <th style="width: 13%;">Course</th>
+                    <th style="width: 13%;">Term</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr-Blue">
+                    <td>ANIMUL</td>
+                    <td>Animation and Multimedia </td>
+                    <td>3.0</td>
+                    <td>2.30</td>
+                    <td>Passed</td>
+                    <td>ANIMUL</td>
+                    <td>Second Semester A.Y 2022-2023</td>
+                </tr>
+                <tr class="tr-Blue">
+                    <td>HUMCOM </td>
+                    <td>Human Computer Interaction </td>
+                    <td>3.0</td>
+                    <td>2.30</td>
+                    <td>Passed</td>
+                    <td>HUMCOM </td>
+                    <td>Second Semester A.Y 2022-2023</td>
+                </tr>
+                <tr class="tr-Blue">
+                    <td>MATMOD </td>
+                    <td>Mathematics in the Modern World </td>
+                    <td>3.0</td>
+                    <td>1.50</td>
+                    <td>Passed</td>
+                    <td>MATMOD</td>
+                    <td>Second Semester A.Y 2022-2023</td>
+                </tr>
+                <tr class="tr-Blue">
+                    <td>DASTRU</td>
+                    <td>Data Structures and Algorithms </td>
+                    <td>3.0</td>
+                    <td>2.10</td>
+                    <td>Passed</td>
+                    <td>DASTRU</td>
+                    <td>Second Semester A.Y 2022-2023</td>
+                </tr>
+                <tr class="tr-Blue">
+                    <td>NETWRK</td>
+                    <td>CCNA Exploration: Network Fundamentals</td>
+                    <td>3.0</td>
+                    <td>2.00</td>
+                    <td>Passed</td>
+                    <td>NETWRK</td>
+                    <td>Second Semester A.Y 2022-2023</td>
+                </tr>
+                <tr class="tr-Blue">
+                    <td>PEDUC3</td>
+                    <td>Physical Activities Towards Health and Fitness 3</td>
+                    <td>2.0</td>
+                    <td>1.20</td>
+                    <td>Passed</td>
+                    <td>PEDUC3</td>
+                    <td>Second Semester A.Y 2022-2023</td>
+                </tr>
+                <tr class="tr-Blue">
+                    <td>GEEL02</td>
+                    <td>General Education Elective 2</td>
+                    <td>3.0</td>
+                    <td>1.40</td>
+                    <td>Passed</td>
+                    <td>GEEL02</td>
+                    <td>Second Semester A.Y 2022-2023</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <br>
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7" class="yearsem">Second Year, Second Semester</th>
+            </tr>
+            <tr class="headers">
+                <th style="width: 12%;">Course</th>
+                <th style="width: 27%;">Description</th>
+                <th style="width: 8%;">Unit</th>
+                <th style="width: 10%;">Grade</th>
+                <th style="width: 13%;">Remarks</th>
+                <th style="width: 13%;">Course</th>
+                <th style="width: 13%;">Term</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tr-Blue">
+                <td>UNDSLF</td>
+                <td>Understanding the Self </td>
+                <td>3.0</td>
+                <td>1.60</td>
+                <td>Passed</td>
+                <td>ANIMUL</td>
+                <td>Second Semester A.Y 2022-2023</td>
+            </tr>
+            <tr class="tr-Blue">
+                <td>INMANA</td>
+                <td>Information Management</td>
+                <td>3.0</td>
+                <td>2.60</td>
+                <td>Passed</td>
+                <td>INMANA</td>
+                <td>Second Semester A.Y 2022-2023</td>
+            </tr>
+            <tr class="tr-Blue">
+                <td>EVEDRI</td>
+                <td>Event Driven Programming</td>
+                <td>3.0</td>
+                <td>2.40</td>
+                <td>Passed</td>
+                <td>EVEDRI</td>
+                <td>Second Semester A.Y 2022-2023</td>
+            </tr>
+            <tr class="tr-Blue">
+                <td>PROEL1</td>
+                <td>Professional Elective 1</td>
+                <td>3.0</td>
+                <td>2.00</td>
+                <td>Passed</td>
+                <td>PROEL1</td>
+                <td>Second Semester A.Y 2022-2023</td>
+            </tr>
+            <tr class="tr-Blue">
+                <td>PEDUC4</td>
+                <td>Physical Activities Towards Health and Fitness 4</td>
+                <td>3.0</td>
+                <td>1.10</td>
+                <td>Passed</td>
+                <td>NETWRK</td>
+                <td>Second Semester A.Y 2022-2023</td>
+            </tr>
+            <tr class="tr-Blue">
+                <td>TECHNO</td>
+                <td>Technopreneurship</td>
+                <td>2.0</td>
+                <td>2.60</td>
+                <td>Passed</td>
+                <td>PEDUC3</td>
+                <td>Second Semester A.Y 2022-2023</td>
+            </tr>
+            <tr class="tr-white">
+                <td>GEEL03</td>
+                <td>General Education Elective 3</td>
+                <td>3.0</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+        </tbody>
+    </table>
+    </div>
+    <br>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7" class="yearsem">Third Year,First Semester</th>
+            </tr>
+            <tr class="headers">
+                <th style="width: 12%;">Course</th>
+                <th style="width: 27%;">Description</th>
+                <th style="width: 8%;">Unit</th>
+                <th style="width: 10%;">Grade</th>
+                <th style="width: 13%;">Remarks</th>
+                <th style="width: 13%;">Course</th>
+                <th style="width: 13%;">Term</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tr-Blue">
+                <td>SOFENG</td>
+                <td>Software Engineering</td>
+                <td>3.0</td>
+                <td></td>
+                <td>In Progress</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="tr-Blue">
+                <td>WEBTEC</td>
+                <td>Web Technology</td>
+                <td>3.0</td>
+                <td></td>
+                <td>In Progress</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="tr-Blue">
+                <td>SYSTIN</td>
+                <td>System Integration and Architecture</td>
+                <td>3.0</td>
+                <td></td>
+                <td>In Progress</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="tr-Blue">
+                <td>MOBAPP</td>
+                <td>Mobile Application</td>
+                <td>3.0</td>
+                <td></td>
+                <td>In Progress</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="tr-Blue">
+                <td>PROEL2</td>
+                <td>Professional Elective 2</td>
+                <td>3.0</td>
+                <td></td>
+                <td>In Progress</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="tr-Blue">
+                <td>RESMET</td>
+                <td>Research Methods in IT</td>
+                <td>3.0</td>
+                <td></td>
+                <td>In Progress</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+</div>
+
+</body>
+</html>
